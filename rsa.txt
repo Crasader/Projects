@@ -1,0 +1,197 @@
+package utils
+
+import (
+	"crypto"
+	"crypto/md5"
+	"crypto/rand"
+	"crypto/rsa"
+	"crypto/sha1"
+	"crypto/sha256"
+	"crypto/x509"
+	"encoding/base64"
+	"encoding/hex"
+	"encoding/json"
+	"encoding/pem"
+	"errors"
+	"fmt"
+	"io/ioutil"
+	"net/http"
+	"net/url"
+	"sort"
+	"strings"
+	"time"
+
+	log "github.com/cihub/seelog"
+)
+
+
+const (
+	beginPublicKey  = "-----BEGIN PUBLIC KEY-----\r\n"
+	endPublicKey    = "-----END PUBLIC KEY-----\r\n"
+	beginPrivateKey = "-----BEGIN RSA PRIVATE KEY-----\r\n"
+	endPrivateKey   = "-----END RSA PRIVATE KEY-----\r\n"
+)
+
+func getStrSign(data map[string]interface{}) (string, error) {
+	keys := make([]string, len(data))
+	i := 0
+	for k, _ := range data {
+		keys[i] = k
+		i++
+	}
+	retStr := ""
+	sort.Strings(keys)
+	for j := 0; j < len(keys); j++ {
+		key := keys[j]
+		if j == 0 {
+			retStr += "" + key + "=" + data[key].(string)
+		} else {
+			retStr += "&" + key + "=" + data[key].(string)
+		}
+	}
+	return retStr, nil
+}
+
+func makeSignString(params map[string]interface{}, encode bool) string {
+	keys := make([]string, len(params))
+	i := 0
+	for k, _ := range params {
+		keys[i] = k
+		i++
+	}
+	retStr := ""
+	sort.Strings(keys)
+	for j := 0; j < len(keys); j++ {
+		key := keys[j]
+		value := params[key].(string)
+		if encode {
+			value = url.QueryEscape(value)
+		}
+		if j == 0 {
+			retStr += "" + key + "=" + value
+		} else {
+			retStr += "&" + key + "=" + value
+		}
+	}
+	return retStr
+}
+
+func createPublicKey(publicKey string) []byte {
+	ret := beginPublicKey
+	keylen := len(publicKey)
+	raw := keylen / 64
+	rm := keylen % 64
+	for i := 0; i < raw; i++ {
+		line := publicKey[i*64:i*64+64] + "\r\n"
+		ret += line
+	}
+	if rm > 0 {
+		ret += publicKey[keylen-rm:] + "\r\n"
+	}
+	ret += endPublicKey
+	return []byte(ret)
+}
+
+func createPrivateKey(privateKey string) []byte {
+	ret := beginPrivateKey
+	keylen := len(privateKey)
+	raw := keylen / 64
+	rm := keylen % 64
+	for i := 0; i < raw; i++ {
+		line := privateKey[i*64:i*64+64] + "\r\n"
+		ret += line
+	}
+	if rm > 0 {
+		ret += privateKey[keylen-rm:] + "\r\n"
+	}
+	ret += endPrivateKey
+	return []byte(ret)
+}
+
+// 加密
+func RsaEncrypt(origData, publicKey []byte) ([]byte, error) {
+	block, _ := pem.Decode(publicKey)
+	if block == nil {
+		return nil, errors.New("public key error")
+	}
+	pubInterface, err := x509.ParsePKIXPublicKey(block.Bytes)
+	if err != nil {
+		return nil, err
+	}
+	pub := pubInterface.(*rsa.PublicKey)
+	return rsa.EncryptPKCS1v15(rand.Reader, pub, origData)
+}
+
+// 解密
+func RsaDecrypt(ciphertext, privateKey []byte) ([]byte, error) {
+	block, _ := pem.Decode(privateKey)
+	if block == nil {
+		return nil, errors.New("private key error!")
+	}
+	priv, err := x509.ParsePKCS1PrivateKey(block.Bytes)
+	if err != nil {
+		return nil, err
+	}
+	return rsa.DecryptPKCS1v15(rand.Reader, priv, ciphertext)
+}
+
+//签名
+func RsaSign(data, privateKey []byte) (string, error) {
+	block, _ := pem.Decode(privateKey)
+	if block == nil {
+		return "", errors.New("private key error")
+	}
+	privkey, err := x509.ParsePKCS1PrivateKey(block.Bytes)
+	if err != nil {
+		return "", err
+	}
+	h := sha1.New()
+	h.Write(data)
+	signature, err := rsa.SignPKCS1v15(rand.Reader, privkey, crypto.SHA1, h.Sum(nil))
+	if err != nil {
+		return "", errors.New("sign error")
+	}
+	return base64.StdEncoding.EncodeToString(signature), nil
+}
+
+//sha256withRsa 签名
+func SHA256RsaSign(data, privateKey []byte) (string, error) {
+	block, _ := pem.Decode(privateKey)
+	if block == nil {
+		return "", errors.New("private key error")
+	}
+	privkey, err := x509.ParsePKCS8PrivateKey(block.Bytes)
+	if err != nil {
+		return "", err
+	}
+	h := sha256.New()
+	h.Write(data)
+	signature, err := rsa.SignPKCS1v15(rand.Reader, privkey.(*rsa.PrivateKey), crypto.SHA256, h.Sum(nil))
+	if err != nil {
+		return "", errors.New("sign error")
+	}
+	return base64.StdEncoding.EncodeToString(signature), nil
+}
+
+//验证签名
+func RsaVerify(sign string, data, publicKey []byte) (bool, error) {
+	block, _ := pem.Decode(publicKey)
+	if block == nil {
+		return false, errors.New("public key error")
+	}
+	pubkey, err := x509.ParsePKIXPublicKey(block.Bytes)
+	if err != nil {
+		return false, err
+	}
+	h := sha256.New()
+	h.Write(data)
+	signature, err := base64.StdEncoding.DecodeString(sign)
+	if err != nil {
+		return false, errors.New("base64 decode sign error")
+	}
+	err = rsa.VerifyPKCS1v15(pubkey.(*rsa.PublicKey), crypto.SHA256, h.Sum(nil), signature)
+	if err != nil {
+		return false, err
+	}
+	return true, nil
+}
