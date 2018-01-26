@@ -2,7 +2,7 @@
 //  PublicOC.h
 //  FishX
 //
-//   13-6-6.
+//  Created by peng on 13-6-6.
 //
 //
 

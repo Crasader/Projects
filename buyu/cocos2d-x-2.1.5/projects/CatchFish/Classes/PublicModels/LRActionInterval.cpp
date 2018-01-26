@@ -2,7 +2,7 @@
 //  LRActionInterval.cpp
 //  FishX
 //
-//   13-1-24.
+//  Created by peng on 13-1-24.
 //
 //
 

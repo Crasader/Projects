@@ -1,8 +1,8 @@
-//
+﻿//
 //  IOSFashion_Config.h
 //  peng
 //
-//   12-12-5.
+//  Created by peng on 12-12-5.
 //  Copyright (c) 2012年 peng. All rights reserved.
 //
 

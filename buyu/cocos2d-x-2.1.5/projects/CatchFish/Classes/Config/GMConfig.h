@@ -1,8 +1,8 @@
-//
+﻿//
 //  Config.h
 //  FISHING
 //
-//   12-10-24.
+//  Created by peng on 12-10-24.
 //
 //
 

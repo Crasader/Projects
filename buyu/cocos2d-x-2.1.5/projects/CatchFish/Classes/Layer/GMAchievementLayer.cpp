@@ -2,7 +2,7 @@
 //  GMAchievementLayer.cpp
 //  FishX
 //
-//   13-2-26.
+//  Created by peng on 13-2-26.
 //  成就
 //
 

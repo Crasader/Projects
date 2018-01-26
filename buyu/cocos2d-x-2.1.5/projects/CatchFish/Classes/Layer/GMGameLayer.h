@@ -1,8 +1,8 @@
-﻿//
+//
 //  GMGameLayer.h
 //  FishX
 //
-//   12-12-24.
+//  Created by peng on 12-12-24.
 //
 //
 

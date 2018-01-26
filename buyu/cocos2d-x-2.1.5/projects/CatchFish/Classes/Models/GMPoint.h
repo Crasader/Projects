@@ -2,7 +2,7 @@
 //  GMPoint.h
 //  FishX
 //
-//   13-1-23.
+//  Created by peng on 13-1-23.
 //
 //
 

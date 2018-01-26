@@ -2,7 +2,7 @@
 //  GMBootModeLayer.cpp
 //  FishX
 //
-//   13-2-28.
+//  Created by peng on 13-2-28.
 //
 //
 

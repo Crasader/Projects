@@ -2,7 +2,7 @@
 //  GMAchievementPrompt.cpp
 //  FishX
 //
-//   13-3-12.
+//  Created by peng on 13-3-12.
 //
 //
 

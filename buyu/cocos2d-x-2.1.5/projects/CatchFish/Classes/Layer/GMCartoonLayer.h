@@ -2,7 +2,7 @@
 //  GMCartoonLayer.h
 //  FishX
 //
-//   13-3-6.
+//  Created by peng on 13-3-6.
 //
 //
 

@@ -2,7 +2,7 @@
 //  GMBillingLayer.h
 //  FishX
 //
-//   13-5-9.
+//  Created by peng on 13-5-9.
 //
 //
 

@@ -2,7 +2,7 @@
 //  GMEnemyAction.cpp
 //  FishX
 //
-//   13-1-7.
+//  Created by peng on 13-1-7.
 //
 //
 

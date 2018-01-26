@@ -2,7 +2,7 @@
 //  GMBoss1Action.h
 //  FishX
 //
-//   13-2-4.
+//  Created by peng on 13-2-4.
 //
 //
 

@@ -2,7 +2,7 @@
 //  GMStrange.cpp
 //  FishX
 //
-//   13-1-10.
+//  Created by peng on 13-1-10.
 //  关卡随机刷怪数据
 //
 

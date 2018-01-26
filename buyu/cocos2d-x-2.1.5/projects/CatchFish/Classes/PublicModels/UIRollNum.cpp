@@ -2,7 +2,7 @@
 //  UIRollNum.cpp
 //  FishX
 //
-//   12-12-27.
+//  Created by peng on 12-12-27.
 //
 //
 

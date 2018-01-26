@@ -2,7 +2,7 @@
 //  GMTargetLayer.h
 //  FishX
 //
-//   13-3-10.
+//  Created by peng on 13-3-10.
 //
 //
 

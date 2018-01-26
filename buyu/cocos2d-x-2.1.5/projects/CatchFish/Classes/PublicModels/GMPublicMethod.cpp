@@ -1,8 +1,8 @@
-﻿//
+//
 //  GMPublicMethod.cpp
 //  FishX
 //
-//   13-1-15.
+//  Created by peng on 13-1-15.
 //
 //
 
