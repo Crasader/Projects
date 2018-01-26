@@ -2,7 +2,7 @@
 //  GMNoTouchLayer.h
 //  FishX
 //
-//  Created by peng on 12-12-25.
+//  Created by admin on 12-12-25.
 //
 //
 

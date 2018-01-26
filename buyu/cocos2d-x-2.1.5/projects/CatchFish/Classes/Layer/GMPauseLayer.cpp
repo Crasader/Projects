@@ -2,7 +2,7 @@
 //  GMPauseLayer.cpp
 //  FishX
 //
-//  Created by peng on 12-12-24.
+//  Created by admin on 12-12-24.
 //
 //
 

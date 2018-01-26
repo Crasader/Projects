@@ -2,7 +2,7 @@
 //  GMPoint.cpp
 //  FishX
 //
-//  Created by peng on 13-1-23.
+//  Created by admin on 13-1-23.
 //
 //
 

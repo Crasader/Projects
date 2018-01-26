@@ -2,7 +2,7 @@
 //  GMAccessData.cpp
 //  FishX
 //
-//  Created by peng on 13-1-14.
+//  Created by admin on 13-1-14.
 //
 //
 

@@ -2,7 +2,7 @@
 //  GMGoods.h
 //  FishX
 //
-//  Created by peng on 13-3-1.
+//  Created by admin on 13-3-1.
 //
 //
 

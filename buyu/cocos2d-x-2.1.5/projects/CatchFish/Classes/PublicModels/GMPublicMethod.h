@@ -2,7 +2,7 @@
 //  GMPublicMethod.h
 //  FishX
 //
-//  Created by peng on 13-1-15.
+//  Created by admin on 13-1-15.
 //
 //
 

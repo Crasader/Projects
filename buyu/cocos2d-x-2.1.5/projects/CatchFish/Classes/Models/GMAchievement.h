@@ -2,7 +2,7 @@
 //  GMAchievement.h
 //  FishX
 //
-//  Created by peng on 13-3-12.
+//  Created by admin on 13-3-12.
 //
 //
 

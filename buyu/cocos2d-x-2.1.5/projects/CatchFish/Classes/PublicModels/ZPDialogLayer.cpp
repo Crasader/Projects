@@ -2,7 +2,7 @@
 //  ZPDialogLayer.cpp
 //  FishX
 //
-//  Created by peng on 13-4-19.
+//  Created by admin on 13-4-19.
 //
 //
 

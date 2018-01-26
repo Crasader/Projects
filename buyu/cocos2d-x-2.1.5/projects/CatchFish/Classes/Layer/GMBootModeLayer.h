@@ -2,7 +2,7 @@
 //  GMBootModeLayer.h
 //  FishX
 //
-//  Created by peng on 13-2-28.
+//  Created by admin on 13-2-28.
 //
 //
 

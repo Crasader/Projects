@@ -2,7 +2,7 @@
 //  GMElementLayer.h
 //  FishX
 //
-//  Created by peng on 13-1-9.
+//  Created by admin on 13-1-9.
 //
 //
 

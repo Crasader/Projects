@@ -2,7 +2,7 @@
 //  GMCheckpoints.h
 //  FishX
 //
-//  Created by peng on 13-1-10.
+//  Created by admin on 13-1-10.
 //  关卡
 //
 

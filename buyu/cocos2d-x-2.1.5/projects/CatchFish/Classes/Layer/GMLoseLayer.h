@@ -2,7 +2,7 @@
 //  GMLoseLayer.h
 //  FishX
 //
-//  Created by peng on 12-12-26.
+//  Created by admin on 12-12-26.
 //
 //
 

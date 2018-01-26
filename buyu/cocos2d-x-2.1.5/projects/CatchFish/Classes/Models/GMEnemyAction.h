@@ -2,7 +2,7 @@
 //  GMEnemyAction.h
 //  FishX
 //
-//  Created by peng on 13-1-7.
+//  Created by admin on 13-1-7.
 //
 //
 

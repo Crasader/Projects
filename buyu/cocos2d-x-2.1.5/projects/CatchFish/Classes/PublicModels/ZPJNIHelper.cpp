@@ -2,7 +2,7 @@
 //  ZPJNIHelper.cpp
 //  FishX
 //
-//  Created by peng on 13-4-26.
+//  Created by admin on 13-4-26.
 //
 //
 

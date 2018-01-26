@@ -2,7 +2,7 @@
 //  GMBossOctopus.cpp
 //  FishX
 //
-//  Created by peng on 13-4-1.
+//  Created by admin on 13-4-1.
 //
 //
 

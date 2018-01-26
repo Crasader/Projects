@@ -2,7 +2,7 @@
 //  CCLagrange.cpp
 //  FishX
 //
-//  Created by peng on 13-1-25.
+//  Created by admin on 13-1-25.
 //
 //
 
