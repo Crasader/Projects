@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{76A39BB2-9B84-4C65-98A5-654D86B86F2A}</ProjectGuid>
+    <RootNamespace>test_win32</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <IncludePath>$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\cocos2dx;$(ProjectDir)..\..\..\cocos2dx\include;$(ProjectDir)..\..\..\cocos2dx\kazmath\include;$(ProjectDir)..\..\..\cocos2dx\platform\win32;$(ProjectDir)..\..\..\cocos2dx\platform\third_party\win32;$(ProjectDir)..\..\..\cocos2dx\platform\third_party\win32\OGLES;$(ProjectDir)..\..\..\external;$(ProjectDir)..\..\..\external\chipmunk\include\chipmunk;$(ProjectDir)..\..\..\CocosDenshion\include;$(ProjectDir)..\..\..\extensions;..\Classes;..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libExtensions.lib;libcocos2d.lib;libCocosDenshion.lib;opengl32.lib;glew32.lib;libBox2d.lib;libchipmunk.lib;libcurl_imp.lib;pthreadVCE2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\cocos2dx;$(ProjectDir)..\..\..\cocos2dx\include;$(ProjectDir)..\..\..\cocos2dx\kazmath\include;$(ProjectDir)..\..\..\cocos2dx\platform\win32;$(ProjectDir)..\..\..\cocos2dx\platform\third_party\win32;$(ProjectDir)..\..\..\cocos2dx\platform\third_party\win32\OGLES;$(ProjectDir)..\..\..\external;$(ProjectDir)..\..\..\external\chipmunk\include\chipmunk;$(ProjectDir)..\..\..\CocosDenshion\include;$(ProjectDir)..\..\..\extensions;..\Classes;..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libcocos2d.lib;libCocosDenshion.lib;opengl32.lib;glew32.lib;libBox2d.lib;libchipmunk.lib;libcurl_imp.lib;libExtensions.lib;pthreadVCE2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\Layer\GMAchievementLayer.cpp" />
+    <ClCompile Include="..\Classes\Layer\GMAchievementPrompt.cpp" />
+    <ClCompile Include="..\Classes\Layer\GMBootModeLayer.cpp" />
+    <ClCompile Include="..\Classes\Layer\GMCardLayer.cpp" />
+    <ClCompile Include="..\Classes\Layer\GMCartoonLayer.cpp" />
+    <ClCompile Include="..\Classes\Layer\GMElementLayer.cpp" />
+    <ClCompile Include="..\Classes\Layer\GMGameLayer.cpp" />
+    <ClCompile Include="..\Classes\Layer\GMHelpLayer.cpp" />
+    <ClCompile Include="..\Classes\Layer\GMIntroLayer.cpp" />
+    <ClCompile Include="..\Classes\Layer\GMLoseLayer.cpp" />
+    <ClCompile Include="..\Classes\Layer\GMMainLayer.cpp" />
+    <ClCompile Include="..\Classes\Layer\GMMenuLayer.cpp" />
+    <ClCompile Include="..\Classes\Layer\GMPauseLayer.cpp" />
+    <ClCompile Include="..\Classes\Layer\GMTargetLayer.cpp" />
+    <ClCompile Include="..\Classes\Layer\GMWheelLayer.cpp" />
+    <ClCompile Include="..\Classes\Layer\GMWinLayer.cpp" />
+    <ClCompile Include="..\Classes\Models\CountBullet.cpp" />
+    <ClCompile Include="..\Classes\Models\GMAchievement.cpp" />
+    <ClCompile Include="..\Classes\Models\GMBoss1Action.cpp" />
+    <ClCompile Include="..\Classes\Models\GMBossOctopus.cpp" />
+    <ClCompile Include="..\Classes\Models\GMBossPoseidon.cpp" />
+    <ClCompile Include="..\Classes\Models\GMBossStarfishKing.cpp" />
+    <ClCompile Include="..\Classes\Models\GMBullet.cpp" />
+    <ClCompile Include="..\Classes\Models\GMCheckpoints.cpp" />
+    <ClCompile Include="..\Classes\Models\GMCheckpointsList.cpp" />
+    <ClCompile Include="..\Classes\Models\GMEnemy.cpp" />
+    <ClCompile Include="..\Classes\Models\GMEnemyAction.cpp" />
+    <ClCompile Include="..\Classes\Models\GMFishBullet.cpp" />
+    <ClCompile Include="..\Classes\Models\GMGoods.cpp" />
+    <ClCompile Include="..\Classes\Models\GMNet.cpp" />
+    <ClCompile Include="..\Classes\Models\GMPoint.cpp" />
+    <ClCompile Include="..\Classes\Models\GMStrange.cpp" />
+    <ClCompile Include="..\Classes\Models\GMTask.cpp" />
+    <ClCompile Include="..\Classes\PublicModels\CCLagrange.cpp" />
+    <ClCompile Include="..\Classes\PublicModels\CursorTextField.cpp" />
+    <ClCompile Include="..\Classes\PublicModels\DataBase64Himi.cpp" />
+    <ClCompile Include="..\Classes\PublicModels\GMAccessData.cpp" />
+    <ClCompile Include="..\Classes\PublicModels\GMAudioPlay.cpp" />
+    <ClCompile Include="..\Classes\PublicModels\GMBillingLayer.cpp" />
+    <ClCompile Include="..\Classes\PublicModels\GMNoTouchLayer.cpp" />
+    <ClCompile Include="..\Classes\PublicModels\GMPublicMethod.cpp" />
+    <ClCompile Include="..\Classes\PublicModels\LRActionInterval.cpp" />
+    <ClCompile Include="..\Classes\PublicModels\UINumber.cpp" />
+    <ClCompile Include="..\Classes\PublicModels\UIRollNum.cpp" />
+    <ClCompile Include="..\Classes\PublicModels\ZPDialogLayer.cpp" />
+    <ClCompile Include="..\Classes\PublicModels\ZPJNIHelper.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\Config\GMConfig.h" />
+    <ClInclude Include="..\Classes\Config\GMEnum.h" />
+    <ClInclude Include="..\Classes\Config\GMFashionConfig.h" />
+    <ClInclude Include="..\Classes\Config\GMFashion_Config.h" />
+    <ClInclude Include="..\Classes\Config\GMHeaderConfig.h" />
+    <ClInclude Include="..\Classes\Layer\GMAchievementLayer.h" />
+    <ClInclude Include="..\Classes\Layer\GMAchievementPrompt.h" />
+    <ClInclude Include="..\Classes\Layer\GMBootModeLayer.h" />
+    <ClInclude Include="..\Classes\Layer\GMCardLayer.h" />
+    <ClInclude Include="..\Classes\Layer\GMCartoonLayer.h" />
+    <ClInclude Include="..\Classes\Layer\GMElementLayer.h" />
+    <ClInclude Include="..\Classes\Layer\GMGameLayer.h" />
+    <ClInclude Include="..\Classes\Layer\GMHelpLayer.h" />
+    <ClInclude Include="..\Classes\Layer\GMIntroLayer.h" />
+    <ClInclude Include="..\Classes\Layer\GMLoseLayer.h" />
+    <ClInclude Include="..\Classes\Layer\GMMainLayer.h" />
+    <ClInclude Include="..\Classes\Layer\GMMenuLayer.h" />
+    <ClInclude Include="..\Classes\Layer\GMPauseLayer.h" />
+    <ClInclude Include="..\Classes\Layer\GMTargetLayer.h" />
+    <ClInclude Include="..\Classes\Layer\GMWheelLayer.h" />
+    <ClInclude Include="..\Classes\Layer\GMWinLayer.h" />
+    <ClInclude Include="..\Classes\Models\CountBullet.h" />
+    <ClInclude Include="..\Classes\Models\GMAchievement.h" />
+    <ClInclude Include="..\Classes\Models\GMBoss1Action.h" />
+    <ClInclude Include="..\Classes\Models\GMBossOctopus.h" />
+    <ClInclude Include="..\Classes\Models\GMBossPoseidon.h" />
+    <ClInclude Include="..\Classes\Models\GMBossStarfishKing.h" />
+    <ClInclude Include="..\Classes\Models\GMBullet.h" />
+    <ClInclude Include="..\Classes\Models\GMCheckpoints.h" />
+    <ClInclude Include="..\Classes\Models\GMCheckpointsList.h" />
+    <ClInclude Include="..\Classes\Models\GMEnemy.h" />
+    <ClInclude Include="..\Classes\Models\GMEnemyAction.h" />
+    <ClInclude Include="..\Classes\Models\GMFishBullet.h" />
+    <ClInclude Include="..\Classes\Models\GMGoods.h" />
+    <ClInclude Include="..\Classes\Models\GMNet.h" />
+    <ClInclude Include="..\Classes\Models\GMPoint.h" />
+    <ClInclude Include="..\Classes\Models\GMStrange.h" />
+    <ClInclude Include="..\Classes\Models\GMTask.h" />
+    <ClInclude Include="..\Classes\PublicModels\CCLagrange.h" />
+    <ClInclude Include="..\Classes\PublicModels\CCLagrangeConfig.h" />
+    <ClInclude Include="..\Classes\PublicModels\CursorTextField.h" />
+    <ClInclude Include="..\Classes\PublicModels\DataBase64Himi.h" />
+    <ClInclude Include="..\Classes\PublicModels\GMAccessData.h" />
+    <ClInclude Include="..\Classes\PublicModels\GMAudioPlay.h" />
+    <ClInclude Include="..\Classes\PublicModels\GMBillingLayer.h" />
+    <ClInclude Include="..\Classes\PublicModels\GMNoTouchLayer.h" />
+    <ClInclude Include="..\Classes\PublicModels\GMPublicMethod.h" />
+    <ClInclude Include="..\Classes\PublicModels\LRActionInterval.h" />
+    <ClInclude Include="..\Classes\PublicModels\UINumber.h" />
+    <ClInclude Include="..\Classes\PublicModels\UIRollNum.h" />
+    <ClInclude Include="..\Classes\PublicModels\ZPDialogLayer.h" />
+    <ClInclude Include="..\Classes\PublicModels\ZPJNIHelper.h" />
+    <ClInclude Include="main.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\cocos2dx\proj.win32\cocos2d.vcxproj">
+      <Project>{98a51ba8-fc3a-415b-ac8f-8c7bd464e93e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\CocosDenshion\proj.win32\CocosDenshion.vcxproj">
+      <Project>{f8edd7fa-9a51-4e80-baeb-860825d2eac6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\extensions\proj.win32\libExtensions.vcxproj">
+      <Project>{21b2c324-891f-48ea-ad1a-5ae13de12e28}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

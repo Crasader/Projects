@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Config">
+      <UniqueIdentifier>{c9fa3e73-bdfb-47e1-a423-13d618343fba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Layer">
+      <UniqueIdentifier>{5edc52d2-2863-400b-9cef-bce1cc476c54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Models">
+      <UniqueIdentifier>{995f231e-bbe8-4c38-a69b-877837b5c47d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\PublicModels">
+      <UniqueIdentifier>{b0d165bd-f758-4096-91bb-746d24409d96}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\GMAchievementLayer.cpp">
+      <Filter>Classes\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\GMAchievementPrompt.cpp">
+      <Filter>Classes\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\GMBootModeLayer.cpp">
+      <Filter>Classes\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\GMCardLayer.cpp">
+      <Filter>Classes\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\GMCartoonLayer.cpp">
+      <Filter>Classes\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\GMElementLayer.cpp">
+      <Filter>Classes\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\GMGameLayer.cpp">
+      <Filter>Classes\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\GMHelpLayer.cpp">
+      <Filter>Classes\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\GMIntroLayer.cpp">
+      <Filter>Classes\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\GMLoseLayer.cpp">
+      <Filter>Classes\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\GMMainLayer.cpp">
+      <Filter>Classes\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\GMMenuLayer.cpp">
+      <Filter>Classes\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\GMPauseLayer.cpp">
+      <Filter>Classes\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\GMTargetLayer.cpp">
+      <Filter>Classes\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\GMWheelLayer.cpp">
+      <Filter>Classes\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Layer\GMWinLayer.cpp">
+      <Filter>Classes\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Models\CountBullet.cpp">
+      <Filter>Classes\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Models\GMAchievement.cpp">
+      <Filter>Classes\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Models\GMBoss1Action.cpp">
+      <Filter>Classes\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Models\GMBossOctopus.cpp">
+      <Filter>Classes\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Models\GMBossPoseidon.cpp">
+      <Filter>Classes\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Models\GMBossStarfishKing.cpp">
+      <Filter>Classes\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Models\GMBullet.cpp">
+      <Filter>Classes\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Models\GMCheckpoints.cpp">
+      <Filter>Classes\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Models\GMCheckpointsList.cpp">
+      <Filter>Classes\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Models\GMEnemy.cpp">
+      <Filter>Classes\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Models\GMEnemyAction.cpp">
+      <Filter>Classes\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Models\GMFishBullet.cpp">
+      <Filter>Classes\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Models\GMGoods.cpp">
+      <Filter>Classes\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Models\GMNet.cpp">
+      <Filter>Classes\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Models\GMPoint.cpp">
+      <Filter>Classes\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Models\GMStrange.cpp">
+      <Filter>Classes\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Models\GMTask.cpp">
+      <Filter>Classes\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PublicModels\CCLagrange.cpp">
+      <Filter>Classes\PublicModels</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PublicModels\CursorTextField.cpp">
+      <Filter>Classes\PublicModels</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PublicModels\DataBase64Himi.cpp">
+      <Filter>Classes\PublicModels</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PublicModels\GMAccessData.cpp">
+      <Filter>Classes\PublicModels</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PublicModels\GMAudioPlay.cpp">
+      <Filter>Classes\PublicModels</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PublicModels\GMBillingLayer.cpp">
+      <Filter>Classes\PublicModels</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PublicModels\GMNoTouchLayer.cpp">
+      <Filter>Classes\PublicModels</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PublicModels\GMPublicMethod.cpp">
+      <Filter>Classes\PublicModels</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PublicModels\LRActionInterval.cpp">
+      <Filter>Classes\PublicModels</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PublicModels\UINumber.cpp">
+      <Filter>Classes\PublicModels</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PublicModels\UIRollNum.cpp">
+      <Filter>Classes\PublicModels</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PublicModels\ZPDialogLayer.cpp">
+      <Filter>Classes\PublicModels</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PublicModels\ZPJNIHelper.cpp">
+      <Filter>Classes\PublicModels</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Config\GMConfig.h">
+      <Filter>Classes\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Config\GMEnum.h">
+      <Filter>Classes\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Config\GMFashion_Config.h">
+      <Filter>Classes\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Config\GMFashionConfig.h">
+      <Filter>Classes\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Config\GMHeaderConfig.h">
+      <Filter>Classes\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\GMAchievementLayer.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\GMAchievementPrompt.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\GMBootModeLayer.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\GMCardLayer.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\GMCartoonLayer.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\GMElementLayer.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\GMGameLayer.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\GMHelpLayer.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\GMIntroLayer.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\GMLoseLayer.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\GMMainLayer.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\GMMenuLayer.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\GMPauseLayer.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\GMTargetLayer.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\GMWheelLayer.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Layer\GMWinLayer.h">
+      <Filter>Classes\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Models\CountBullet.h">
+      <Filter>Classes\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Models\GMAchievement.h">
+      <Filter>Classes\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Models\GMBoss1Action.h">
+      <Filter>Classes\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Models\GMBossOctopus.h">
+      <Filter>Classes\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Models\GMBossPoseidon.h">
+      <Filter>Classes\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Models\GMBossStarfishKing.h">
+      <Filter>Classes\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Models\GMBullet.h">
+      <Filter>Classes\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Models\GMCheckpoints.h">
+      <Filter>Classes\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Models\GMCheckpointsList.h">
+      <Filter>Classes\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Models\GMEnemy.h">
+      <Filter>Classes\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Models\GMEnemyAction.h">
+      <Filter>Classes\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Models\GMFishBullet.h">
+      <Filter>Classes\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Models\GMGoods.h">
+      <Filter>Classes\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Models\GMNet.h">
+      <Filter>Classes\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Models\GMPoint.h">
+      <Filter>Classes\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Models\GMStrange.h">
+      <Filter>Classes\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Models\GMTask.h">
+      <Filter>Classes\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PublicModels\CCLagrange.h">
+      <Filter>Classes\PublicModels</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PublicModels\CCLagrangeConfig.h">
+      <Filter>Classes\PublicModels</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PublicModels\CursorTextField.h">
+      <Filter>Classes\PublicModels</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PublicModels\DataBase64Himi.h">
+      <Filter>Classes\PublicModels</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PublicModels\GMAccessData.h">
+      <Filter>Classes\PublicModels</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PublicModels\GMAudioPlay.h">
+      <Filter>Classes\PublicModels</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PublicModels\GMBillingLayer.h">
+      <Filter>Classes\PublicModels</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PublicModels\GMNoTouchLayer.h">
+      <Filter>Classes\PublicModels</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PublicModels\GMPublicMethod.h">
+      <Filter>Classes\PublicModels</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PublicModels\LRActionInterval.h">
+      <Filter>Classes\PublicModels</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PublicModels\UINumber.h">
+      <Filter>Classes\PublicModels</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PublicModels\UIRollNum.h">
+      <Filter>Classes\PublicModels</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PublicModels\ZPDialogLayer.h">
+      <Filter>Classes\PublicModels</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\PublicModels\ZPJNIHelper.h">
+      <Filter>Classes\PublicModels</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
