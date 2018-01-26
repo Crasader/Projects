@@ -2,7 +2,7 @@
 //  GMCardLayer.h
 //  FishX
 //
-//  Created by peng on 12-12-24.
+//   12-12-24.
 //
 //
 

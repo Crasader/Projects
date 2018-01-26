@@ -2,7 +2,7 @@
 //  FishXAppDelegate.cpp
 //  FishX
 //
-//  Created by peng on 12-12-21.
+//  .
 //  Copyright __MyCompanyName__ 2012年. All rights reserved.
 //
 

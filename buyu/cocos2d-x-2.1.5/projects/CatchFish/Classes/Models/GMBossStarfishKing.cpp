@@ -2,7 +2,7 @@
 //  GMBossStarfishKing.cpp
 //  FishX
 //
-//  Created by peng on 13-4-16.
+//   13-4-16.
 //
 //
 

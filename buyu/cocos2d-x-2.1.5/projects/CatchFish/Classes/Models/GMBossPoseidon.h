@@ -2,7 +2,7 @@
 //  GMBossPoseidon.h
 //  FishX
 //
-//  Created by peng on 13-5-7.
+//   13-5-7.
 //
 //
 /*

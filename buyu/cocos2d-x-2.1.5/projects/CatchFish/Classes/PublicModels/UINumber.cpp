@@ -2,7 +2,7 @@
 //  UINumber.cpp
 //  FishX
 //
-//  Created by peng on 12-12-27.
+//   12-12-27.
 //
 //
 

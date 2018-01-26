@@ -2,7 +2,7 @@
 //  GMMainLayer.cpp
 //  FishX
 //
-//  Created by peng on 12-12-25.
+//   12-12-25.
 //
 //
 /*

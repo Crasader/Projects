@@ -2,7 +2,7 @@
 //  GMGameLayer.cpp
 //  FishX
 //
-//  Created by peng on 12-12-24.
+//   12-12-24.
 //
 //
 

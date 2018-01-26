@@ -1,8 +1,8 @@
-﻿//
+//
 //  GMFashionConfig.h
 //  FishX
 //
-//  Created by peng on 13-1-6.
+//   13-1-6.
 //
 //
 

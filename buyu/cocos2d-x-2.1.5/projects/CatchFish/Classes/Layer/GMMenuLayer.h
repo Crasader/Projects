@@ -2,7 +2,7 @@
 //  GMMenuLayer.h
 //  FishX
 //
-//  Created by peng on 13-1-4.
+//   13-1-4.
 //
 //
 

@@ -1,8 +1,8 @@
-﻿//
+//
 //  GMEnum.h
 //  FishX
 //
-//  Created by peng on 13-1-25.
+//   13-1-25.
 //
 //
 

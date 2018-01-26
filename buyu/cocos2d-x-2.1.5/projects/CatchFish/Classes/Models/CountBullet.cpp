@@ -2,7 +2,7 @@
 //  CountBullet.cpp
 //  FishX
 //
-//  Created by peng on 13-5-27.
+//   13-5-27.
 //
 //
 

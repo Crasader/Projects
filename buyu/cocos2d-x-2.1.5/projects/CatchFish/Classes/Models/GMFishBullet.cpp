@@ -2,7 +2,7 @@
 //  GMFishBullet.cpp
 //  FishX
 //
-//  Created by peng on 13-3-1.
+//   13-3-1.
 //
 //
 

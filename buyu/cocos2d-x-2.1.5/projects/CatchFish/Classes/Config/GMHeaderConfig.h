@@ -1,8 +1,8 @@
-﻿//
+//
 //  GMHeaderConfig.h
 //  FISHING
 //
-//  Created by peng on 12-10-24.
+//   12-10-24.
 //
 //
 

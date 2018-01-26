@@ -2,7 +2,7 @@
 //  GMAudioPlay.cpp
 //  FishX
 //
-//  Created by peng on 13-2-27.
+//   13-2-27.
 //
 //
 

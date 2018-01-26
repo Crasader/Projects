@@ -2,7 +2,7 @@
 //  GMCardLayer.cpp
 //  FishX
 //
-//  Created by peng on 12-12-24.
+//   12-12-24.
 //
 //
 
@@ -781,11 +781,11 @@ bool GMCardLayer::ccTouchBegan(cocos2d::CCTouch *pTouch, cocos2d::CCEvent *pEven
     CCLayer *eachLevel = (CCLayer*)m_pLayer->getChildByTag(EL_Tag00+checkpoints_index);
     if (eachLevel) {
         CCMenu *menu = (CCMenu*)eachLevel->getChildByTag(EL_Tag01);
-        menu->m_eState = kCCMenuStateWaiting;
+        //menu->m_eState = kCCMenuStateWaiting;
         isSelectCheckpoints = menu->ccTouchBegan(pTouch, pEvent);
     }
     if(isSelectCheckpoints==false){
-        otherMenu->m_eState = kCCMenuStateWaiting;
+        //otherMenu->m_eState = kCCMenuStateWaiting;
         isSelectotherMenu = otherMenu->ccTouchBegan(pTouch, pEvent);
     }
     return true;

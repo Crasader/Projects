@@ -25,7 +25,7 @@
 
 #include <spine/CCSkeleton.h>
 #include <spine/spine-cocos2dx.h>
-
+#include<algorithm>
 USING_NS_CC;
 using std::min;
 using std::max;

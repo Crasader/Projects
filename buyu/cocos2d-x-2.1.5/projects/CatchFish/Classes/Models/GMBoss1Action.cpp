@@ -2,7 +2,7 @@
 //  GMBoss1Action.cpp
 //  FishX
 //
-//  Created by peng on 13-2-4.
+//   13-2-4.
 //
 //
 
